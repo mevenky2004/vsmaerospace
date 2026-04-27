@@ -1,0 +1,1963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSM Aerospace College | DGCA Approved AME Training | Yelahanka, Bengaluru</title>
+    <meta name="description" content="VSM Aerospace - DGCA Approved AME Training College in Yelahanka, Bengaluru. 100% Placement, Industry Partnerships with Adani Defence & Aerospace. Since 1994.">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Playfair+Display:wght@700;900&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #001f3f;
+            --secondary-blue: #003d73;
+            --accent-orange: #ff6b35;
+            --accent-gold: #ffa500;
+            --dark-bg: #0a1628;
+            --light-gray: #f8f9fa;
+            --text-dark: #1a1a1a;
+            --text-light: #666;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'IBM Plex Sans', sans-serif;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            background: rgba(0, 31, 63, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+            transition: all 0.3s;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+
+        nav.scrolled {
+            padding: 10px 0;
+            background: rgba(0, 31, 63, 0.98);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-weight: 900;
+            color: white;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--accent-orange);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            transition: color 0.3s;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-orange);
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, var(--accent-orange), var(--accent-gold));
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(255, 107, 53, 0.5);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, var(--dark-bg) 0%, var(--primary-blue) 100%);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 60%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><path d="M500,200 L800,500 L500,800 L200,500 Z" fill="rgba(255,107,53,0.05)" /></svg>');
+            background-size: cover;
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 40px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 107, 53, 0.2);
+            border: 2px solid var(--accent-orange);
+            color: var(--accent-orange);
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 72px;
+            font-weight: 900;
+            color: white;
+            line-height: 1.1;
+            margin-bottom: 25px;
+            animation: fadeInUp 0.8s ease-out 0.2s backwards;
+        }
+
+        .hero h1 span {
+            color: var(--accent-orange);
+        }
+
+        .hero h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 28px;
+            font-weight: 300;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 40px;
+            animation: fadeInUp 0.8s ease-out 0.4s backwards;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            animation: fadeInUp 0.8s ease-out 0.6s backwards;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-orange), var(--accent-gold));
+            color: white;
+            padding: 18px 40px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 16px;
+            text-decoration: none;
+            transition: all 0.3s;
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(255, 107, 53, 0.6);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            padding: 18px 40px;
+            border: 2px solid white;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 16px;
+            text-decoration: none;
+            transition: all 0.3s;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: var(--primary-blue);
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            background: white;
+            padding: 60px 40px;
+            box-shadow: 0 -5px 30px rgba(0,0,0,0.1);
+        }
+
+        .stats-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 50px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 56px;
+            font-weight: 900;
+            color: var(--accent-orange);
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-dark);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Adani Partnership Highlight */
+        .partnership-highlight {
+            background: linear-gradient(135deg, #1a2332 0%, #0d1117 100%);
+            padding: 80px 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .partnership-highlight::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255,107,53,0.1) 0%, transparent 70%);
+            animation: pulse 8s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .partnership-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .partnership-badge {
+            display: inline-block;
+            background: var(--accent-orange);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        .partnership-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 52px;
+            font-weight: 900;
+            color: white;
+            margin-bottom: 25px;
+            line-height: 1.2;
+        }
+
+        .partnership-title span {
+            color: var(--accent-orange);
+        }
+
+        .partnership-description {
+            font-size: 20px;
+            color: rgba(255,255,255,0.8);
+            line-height: 1.7;
+            max-width: 900px;
+            margin-bottom: 40px;
+        }
+
+        .partnership-logos {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            margin-top: 50px;
+        }
+
+        .logo-box {
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 30px 50px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .logo-box h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            font-weight: 800;
+            color: white;
+            letter-spacing: 1px;
+        }
+
+        .plus-icon {
+            font-size: 36px;
+            color: var(--accent-orange);
+            font-weight: 300;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 100px 40px;
+            background: var(--light-gray);
+        }
+
+        .about-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .about-content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            font-weight: 900;
+            color: var(--primary-blue);
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+
+        .about-content h2 span {
+            color: var(--accent-orange);
+        }
+
+        .about-content p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--text-light);
+            margin-bottom: 25px;
+        }
+
+        .about-highlights {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .highlight-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .highlight-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--accent-orange), var(--accent-gold));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .highlight-text {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .about-image {
+            position: relative;
+            height: 500px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .placeholder-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 31, 63, 0.9);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 3;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .placeholder-overlay h4 {
+            color: var(--accent-orange);
+            font-size: 18px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .placeholder-overlay p {
+            color: white;
+            font-size: 14px;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .file-input-btn {
+            background: linear-gradient(135deg, var(--accent-orange), var(--accent-gold));
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 14px;
+        }
+
+        .file-input-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        /* Programs Section */
+        .programs-section {
+            padding: 100px 40px;
+            background: white;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+
+        .section-subtitle {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--accent-orange);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 52px;
+            font-weight: 900;
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+        }
+
+        .section-description {
+            font-size: 18px;
+            color: var(--text-light);
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        .programs-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        .program-card {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            border-radius: 20px;
+            padding: 50px;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .program-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .program-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,107,53,0.1) 0%, transparent 50%);
+        }
+
+        .program-card-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .program-icon {
+            font-size: 48px;
+            margin-bottom: 25px;
+        }
+
+        .program-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .program-description {
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .program-features {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .program-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .program-features li::before {
+            content: '✓';
+            color: var(--accent-orange);
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        /* Facilities Section */
+        .facilities-section {
+            padding: 100px 40px;
+            background: var(--light-gray);
+        }
+
+        .facilities-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 35px;
+        }
+
+        .facility-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+        }
+
+        .facility-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .facility-image {
+            height: 220px;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .facility-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .facility-placeholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 31, 63, 0.95);
+            z-index: 2;
+            padding: 20px;
+        }
+
+        .facility-placeholder p {
+            color: white;
+            font-size: 13px;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        .small-upload-btn {
+            background: var(--accent-orange);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .facility-content {
+            padding: 30px;
+        }
+
+        .facility-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+        }
+
+        .facility-description {
+            font-size: 15px;
+            line-height: 1.6;
+            color: var(--text-light);
+        }
+
+        /* Placement Section */
+        .placement-section {
+            padding: 100px 40px;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-bg) 100%);
+            color: white;
+        }
+
+        .placement-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .placement-highlight {
+            font-family: 'Playfair Display', serif;
+            font-size: 120px;
+            font-weight: 900;
+            color: var(--accent-orange);
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
+        }
+
+        .placement-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+
+        .placement-description {
+            font-size: 20px;
+            line-height: 1.8;
+            max-width: 900px;
+            margin: 0 auto 50px;
+            opacity: 0.9;
+        }
+
+        .placement-partners {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .partner-box {
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .partner-box:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: var(--accent-orange);
+            transform: translateY(-5px);
+        }
+
+        .partner-name {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        /* Video Section */
+        .video-section {
+            padding: 100px 40px;
+            background: white;
+        }
+
+        .video-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .video-main {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            border-radius: 20px;
+            height: 500px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .video-main video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-placeholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 31, 63, 0.95);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            padding: 40px;
+        }
+
+        .video-placeholder h4 {
+            color: var(--accent-orange);
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .video-placeholder p {
+            color: white;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .video-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .video-item {
+            background: var(--light-gray);
+            border-radius: 15px;
+            height: 150px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--primary-blue) 100%);
+        }
+
+        .video-item:hover {
+            transform: scale(1.05);
+        }
+
+        .video-item video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-item-placeholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 31, 63, 0.9);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+        }
+
+        .video-item-placeholder p {
+            color: white;
+            font-size: 12px;
+            margin-bottom: 10px;
+            text-align: center;
+            padding: 0 10px;
+        }
+
+        .video-item-placeholder label {
+            background: var(--accent-orange);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 5px;
+            font-size: 11px;
+            cursor: pointer;
+        }
+
+        /* Testimonials */
+        .testimonials-section {
+            padding: 100px 40px;
+            background: var(--light-gray);
+        }
+
+        .testimonials-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .testimonial-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            position: relative;
+        }
+
+        .quote-icon {
+            font-size: 60px;
+            color: var(--accent-orange);
+            opacity: 0.2;
+            position: absolute;
+            top: 20px;
+            left: 30px;
+        }
+
+        .testimonial-text {
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--text-light);
+            margin-bottom: 25px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .testimonial-author {
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 5px;
+        }
+
+        .testimonial-role {
+            font-size: 14px;
+            color: var(--text-light);
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 100px 40px;
+            background: white;
+        }
+
+        .contact-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+        }
+
+        .contact-info {
+            padding: 50px 0;
+        }
+
+        .contact-info h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            font-weight: 900;
+            color: var(--primary-blue);
+            margin-bottom: 30px;
+        }
+
+        .contact-info h2 span {
+            color: var(--accent-orange);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 35px;
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--accent-orange), var(--accent-gold));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            flex-shrink: 0;
+        }
+
+        .contact-details h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 8px;
+        }
+
+        .contact-details p {
+            font-size: 16px;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        .contact-details a {
+            color: var(--accent-orange);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-form {
+            background: var(--light-gray);
+            padding: 50px;
+            border-radius: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            color: var(--primary-blue);
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 15px;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--accent-orange);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: linear-gradient(135deg, var(--accent-orange), var(--accent-gold));
+            color: white;
+            padding: 18px;
+            border: none;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+            letter-spacing: 0.5px;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-bg);
+            color: white;
+            padding: 60px 40px 30px;
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 50px;
+        }
+
+        .footer-about h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .footer-about h3 span {
+            color: var(--accent-orange);
+        }
+
+        .footer-about p {
+            line-height: 1.7;
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+
+        .footer-section h4 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-section ul li a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section ul li a:hover {
+            color: var(--accent-orange);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 30px;
+            text-align: center;
+            opacity: 0.7;
+        }
+
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            color: white;
+            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.5);
+            cursor: pointer;
+            transition: all 0.3s;
+            z-index: 999;
+            animation: bounce 2s infinite;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.7);
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .nav-links {
+                gap: 25px;
+            }
+            
+            .hero h1 {
+                font-size: 56px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .hero h2 {
+                font-size: 20px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .stats-container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+
+            .about-container,
+            .programs-grid,
+            .video-grid,
+            .contact-container,
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+
+            .facilities-grid,
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .partnership-title {
+                font-size: 36px;
+            }
+
+            .partnership-logos {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .placement-highlight {
+                font-size: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">VSM <span>AEROSPACE</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#facilities">Facilities</a></li>
+                <li><a href="#placements">Placements</a></li>
+                <li><a href="#contact" class="cta-button">Apply Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge">🏆 DGCA APPROVED • SINCE 1994</div>
+            <h1>Build Your Career in<br><span>Aviation Excellence</span></h1>
+            <h2>India's Premier Aircraft Maintenance Engineering College</h2>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-primary">Apply Now 2026</a>
+                <a href="#programs" class="btn-secondary">Explore Programs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number">30+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Placement Record</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">2500+</div>
+                <div class="stat-label">Alumni Network</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">10+</div>
+                <div class="stat-label">Live Aircraft</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adani Partnership Highlight -->
+    <section class="partnership-highlight">
+        <div class="partnership-content">
+            <div class="partnership-badge">🎯 NEW PARTNERSHIP</div>
+            <h2 class="partnership-title">Now Collaborating with<br><span>Adani Defence & Aerospace</span></h2>
+            <p class="partnership-description">
+                VSM Aerospace College, Yelahanka, Bengaluru is proud to announce our strategic collaboration with Adani Defence & Aerospace, 
+                one of India's leading defence and aerospace companies. This partnership opens new doors for our students 
+                with direct industry exposure, advanced training opportunities, and enhanced placement prospects in 
+                India's rapidly growing defence and aerospace sector. Students will gain access to cutting-edge facilities, 
+                internship opportunities, and direct recruitment channels.
+            </p>
+            <div class="partnership-logos">
+                <div class="logo-box">
+                    <h3>VSM AEROSPACE<br>COLLEGE</h3>
+                </div>
+                <div class="plus-icon">×</div>
+                <div class="logo-box">
+                    <h3>ADANI DEFENCE<br>& AEROSPACE</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>Leading AME Training<br>Institute <span>Since 1993</span></h2>
+                <p>
+                    VSM Aerospace AME Training School is a DGCA Approved institute and one of the best AME training 
+                    institutions in India. With over 30 years of excellence, we have built a strong foundation in 
+                    aircraft maintenance engineering education with a proud alumni of 2500+ students working globally.
+                </p>
+                <p>
+                    We are one of the very few AME training institutes in Asia and India with our own light and heavy 
+                    airplanes and helicopters on the property, providing students with genuine "hands-on" training 
+                    experience along with well-equipped libraries and laboratories.
+                </p>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-icon">✓</div>
+                        <div class="highlight-text">DGCA Approved</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">✓</div>
+                        <div class="highlight-text">Live Aircraft Training</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">✓</div>
+                        <div class="highlight-text">Experienced Faculty</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">✓</div>
+                        <div class="highlight-text">World-Class Infrastructure</div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <!-- REPLACE THIS IMAGE: Change src="..." to your campus/aircraft photo path -->
+                <img src="https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=800&h=600&fit=crop" 
+                     alt="VSM Campus" 
+                     style="width:100%;height:100%;object-fit:cover;">
+                <!-- TO REPLACE: Change the src URL above to your image file name like: src="campus-photo.jpg" -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs-section" id="programs">
+        <div class="section-header">
+            <div class="section-subtitle">Our Programs</div>
+            <h2 class="section-title">AME Training Programs</h2>
+            <p class="section-description">
+                Choose from our DGCA-approved Aircraft Maintenance Engineering programs designed to 
+                build technical expertise and management skills for a successful aviation career.
+            </p>
+        </div>
+        <div class="programs-grid">
+            <div class="program-card">
+                <div class="program-card-content">
+                    <div class="program-icon">⚙️</div>
+                    <h3 class="program-title">AME B1.1 - Mechanical</h3>
+                    <p class="program-description">
+                        Aeroplane Turbine including Airframe Systems and Gas Turbine Engines
+                    </p>
+                    <ul class="program-features">
+                        <li>2 Years Duration (4 Semesters)</li>
+                        <li>Hands-on Aircraft Training</li>
+                        <li>DGCA License Track</li>
+                        <li>Practical Assessment Included</li>
+                        <li>PCM/PCB Students Eligible</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary">Apply Now</a>
+                </div>
+            </div>
+            <div class="program-card">
+                <div class="program-card-content">
+                    <div class="program-icon">📡</div>
+                    <h3 class="program-title">AME B2 - Avionics</h3>
+                    <p class="program-description">
+                        Avionics Systems including Electrical, Instrument and Radio Navigation Systems
+                    </p>
+                    <ul class="program-features">
+                        <li>2 Years Duration (4 Semesters)</li>
+                        <li>Advanced Lab Facilities</li>
+                        <li>DGCA License Track</li>
+                        <li>Industry-Ready Certification</li>
+                        <li>PCM/PCB Students Eligible</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary">Apply Now</a>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 60px;">
+            <h3 style="font-family: 'Playfair Display', serif; font-size: 42px; color: var(--primary-blue); margin-bottom: 20px;">
+                AME + BBA Aviation <span style="color: var(--accent-orange);">Dual Degree</span>
+            </h3>
+            <p style="font-size: 18px; color: var(--text-light); max-width: 800px; margin: 0 auto 30px; line-height: 1.7;">
+                Combine technical AME training with Business Administration in Aviation for comprehensive career preparation. 
+                Gain both technical expertise and management skills to excel in the aviation industry.
+            </p>
+            <a href="#contact" class="btn-primary" style="display: inline-block;">Learn More About Dual Degree</a>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section class="facilities-section" id="facilities">
+        <div class="section-header">
+            <div class="section-subtitle">World-Class Infrastructure</div>
+            <h2 class="section-title">Training Facilities</h2>
+            <p class="section-description">
+                State-of-the-art laboratories, workshops, and aircraft for comprehensive hands-on training
+            </p>
+        </div>
+        <div class="facilities-grid">
+            <div class="facility-card">
+                <div class="facility-image">
+                    <!-- REPLACE: src="lab-hangar.jpg" with your aircraft hangar photo -->
+                    <img src="videoimage\IMG-20260127-WA0006.jpg" 
+                         alt="Aircraft Hangar" 
+                         style="width:100%;height:100%;object-fit:cover;">
+                </div>
+                <div class="facility-content">
+                    <h3 class="facility-title">Aircraft Hangar</h3>
+                    <p class="facility-description">
+                        Well-equipped hangar with HS-748, light aircraft, and helicopters for practical training on real aircraft
+                    </p>
+                </div>
+            </div>
+            <div class="facility-card">
+                <div class="facility-image">
+                    <!-- REPLACE: src="lab-jetengine.jpg" with your jet engine lab photo -->
+                    <img src="videoimage\IMG-20260127-WA0007.jpg" 
+                         alt="Jet Engine Lab" 
+                         style="width:100%;height:100%;object-fit:cover;">
+                </div>
+                <div class="facility-content">
+                    <h3 class="facility-title">Jet Engine Lab</h3>
+                    <p class="facility-description">
+                        Advanced jet engine laboratory with real turbine engines and associated ground equipment for hands-on learning
+                    </p>
+                </div>
+            </div>
+            <div class="facility-card">
+                <div class="facility-image">
+                    <!-- REPLACE: src="lab-avionics.jpg" with your avionics lab photo -->
+                    <img src="videoimage\IMG-20260127-WA0005.jpg" 
+                         alt="Avionics Lab" 
+                         style="width:100%;height:100%;object-fit:cover;">
+                </div>
+                <div class="facility-content">
+                    <h3 class="facility-title">Avionics Lab</h3>
+                    <p class="facility-description">
+                        State-of-the-art avionics laboratory with modern instruments, navigation systems, and communication equipment
+                    </p>
+                </div>
+            </div>
+            <div class="facility-card">
+                <div class="facility-image">
+                    <!-- REPLACE: src="lab-electrical.jpg" with your electrical lab photo -->
+                    <img src="videoimage\electrical.jpg" 
+                         alt="Electrical Lab" 
+                         style="width:100%;height:100%;object-fit:cover;">
+                </div>
+                <div class="facility-content">
+                    <h3 class="facility-title">Electrical Lab</h3>
+                    <p class="facility-description">
+                        Comprehensive electrical lab with motors, generators, control systems, and electrical components
+                    </p>
+                </div>
+            </div>
+            <div class="facility-card">
+                <div class="facility-image">
+                    <!-- REPLACE: src="lab-machine.jpg" with your machine shop photo -->
+                    <img src="videoimage\IMG-20260127-WA0009.jpg" 
+                         alt="Machine Shop" 
+                         style="width:100%;height:100%;object-fit:cover;">
+                </div>
+                <div class="facility-content">
+                    <h3 class="facility-title">Machine Shop</h3>
+                    <p class="facility-description">
+                        Professional machine shop with precision tools, CNC machines, and equipment for hands-on engineering practice
+                    </p>
+                </div>
+            </div>
+            <div class="facility-card">
+                <div class="facility-image">
+                    <!-- REPLACE: src="lab-library.jpg" with your library photo -->
+                    <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&h=400&fit=crop" 
+                         alt="Library" 
+                         style="width:100%;height:100%;object-fit:cover;">
+                </div>
+                <div class="facility-content">
+                    <h3 class="facility-title">Library & Resources</h3>
+                    <p class="facility-description">
+                        Extensive library with aviation books, technical manuals, journals, and digital learning resources
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Placement Section -->
+    <section class="placement-section" id="placements">
+        <div class="placement-container">
+            <div class="placement-highlight">100%</div>
+            <h2 class="placement-title">PLACEMENT RECORD</h2>
+            <p class="placement-description">
+                VSM Aerospace has maintained an outstanding 100% placement record, with our graduates working 
+                across leading airlines, MRO organizations, and aerospace companies in India and globally. 
+                Our strong industry partnerships ensure excellent career opportunities for all our students.
+                With 30+ years of experience, we have built relationships with top companies in the aviation sector.
+            </p>
+            <div class="placement-partners">
+                <div class="partner-box">
+                    <div class="partner-name">Adani Defence & Aerospace</div>
+                </div>
+                <div class="partner-box">
+                    <div class="partner-name">Air India</div>
+                </div>
+                <div class="partner-box">
+                    <div class="partner-name">IndiGo Airlines</div>
+                </div>
+                <div class="partner-box">
+                    <div class="partner-name">SpiceJet</div>
+                </div>
+                <div class="partner-box">
+                    <div class="partner-name">Go First</div>
+                </div>
+                <div class="partner-box">
+                    <div class="partner-name">Vistara</div>
+                </div>
+                <div class="partner-box">
+                    <div class="partner-name">Air Asia India</div>
+                </div>
+                <div class="partner-box">
+                    <div class="partner-name">GMR Aero Technic</div>
+                </div>
+                <div class="partner-box">
+                    <div class="partner-name">Alliance Air</div>
+                </div>
+                <div class="partner-box">
+                    <div class="partner-name">Akasa Air</div>
+                </div>
+                <div class="partner-box">
+                    <div class="partner-name">Boeing India</div>
+                </div>
+                <div class="partner-box">
+                    <div class="partner-name">Airbus India</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="video-container">
+            <div class="section-header">
+                <div class="section-subtitle">Campus Life</div>
+                <h2 class="section-title">See VSM in Action</h2>
+                <p class="section-description">Watch our campus tour and student testimonials</p>
+            </div>
+            <div class="video-grid">
+                <div class="video-main">
+                    <video controls style="width:100%;height:100%;object-fit:cover;">
+                        <source src="videoimage\vsmcollegevideo1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <!-- TO REPLACE: Change src above to your video like: src="vsm-campus-tour.mp4" -->
+                </div>
+                <div class="video-sidebar">
+                    <div class="video-item">
+                        <!-- REPLACE: Change src="student-video-1.mp4" -->
+                        <video controls style="width:100%;height:100%;object-fit:cover;">
+                            <source src="videoimage/file1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="video-item">
+                        <!-- REPLACE: Change src="student-video-2.mp4" -->
+                        <video controls style="width:100%;height:100%;object-fit:cover;">
+                            <source src="videoimage/file2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="video-item">
+                        <!-- REPLACE: Change src="facility-tour.mp4" -->
+                        <video controls style="width:100%;height:100%;object-fit:cover;">
+                            <source src="videoimage/file3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="section-header">
+            <div class="section-subtitle">Student Voices</div>
+            <h2 class="section-title">What Our Students Say</h2>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <p class="testimonial-text">
+                    VSM AEROSPACE has given me excellent technical education. The faculty is well experienced 
+                    and provides field related practical training that prepared me for my career. The hands-on 
+                    experience with real aircraft is invaluable.
+                </p>
+                <div class="testimonial-author">Rajesh Kumar</div>
+                <div class="testimonial-role">AME Graduate 2023, Now at IndiGo</div>
+            </div>
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <p class="testimonial-text">
+                    I'm very glad to share a positive journey at VSM AEROSPACE. The atmosphere is full of 
+                    motivation and innovation. All faculty are enthusiastic and always ready to help. The placement 
+                    support was exceptional.
+                </p>
+                <div class="testimonial-author">Priya Sharma</div>
+                <div class="testimonial-role">AME Student, B2 Avionics</div>
+            </div>
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <p class="testimonial-text">
+                    VSM AEROSPACE provides great exposure to students by organizing different activities and 
+                    training programs. The hands-on aircraft experience and industry connections helped me secure 
+                    a great job right after graduation.
+                </p>
+                <div class="testimonial-author">Amit Patel</div>
+                <div class="testimonial-role">AME Graduate, Working at Air India</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Get in <span>Touch</span></h2>
+                <p style="font-size: 18px; color: var(--text-light); margin-bottom: 40px; line-height: 1.7;">
+                    Ready to start your aviation career? Contact us today to learn more about our programs 
+                    and admission process. Our team is here to guide you every step of the way.
+                </p>
+               <div class="contact-item">
+    <div class="contact-icon">📍</div>
+    <div class="contact-details">
+        <h3>Location</h3>
+        <p>
+            <a href="https://www.google.com/maps?q=Major+Akshay+Girish+Kumar+Rd+Sector+A+Yelahanka+Bengaluru+560064" target="_blank">
+                Major Akshay Girish Kumar Rd, Sector A,<br>
+                Yelahanka Satellite Town, Yelahanka New Town,<br>
+                Bengaluru, Karnataka 560064
+            </a>
+        </p>
+    </div>
+</div>
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-details">
+                        <h3>Phone</h3>
+                        <p><a href="tel:+918296360743">+91 82963 60743</a><br>
+                        <a href="tel:+919902965705">+91 99029 65705</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🌐</div>
+                    <div class="contact-details">
+                        <h3>Website</h3>
+                        <p><a href="https://vsmaerospace.in" target="_blank">www.vsmaerospace.in</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">✉️</div>
+                    <div class="contact-details">
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@vsmaerospace.in">info@vsmaerospace.in</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label>Full Name *</label>
+                        <input type="text" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email *</label>
+                        <input type="email" name="email" placeholder="Enter your email address" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number *</label>
+                        <input type="tel" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Program Interest *</label>
+                        <select name="program" required>
+                            <option value="">Select a program</option>
+                            <option value="b1.1">AME B1.1 - Mechanical</option>
+                            <option value="b2">AME B2 - Avionics</option>
+                            <option value="dual">AME + BBA Aviation (Dual Degree)</option>
+                            <option value="other">General Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea name="message" placeholder="Tell us about your queries or any specific questions..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>VSM <span>AEROSPACE</span></h3>
+                <p>
+                    India's premier DGCA-approved Aircraft Maintenance Engineering college, 
+                    building aviation careers since 1994 with excellence and innovation. 
+                    Proud partner of Adani Defence & Aerospace.
+                </p>
+                <p style="margin-top: 20px; font-size: 14px;">
+                    <strong>Admissions Open 2026</strong><br>
+                    Join 2500+ successful alumni working globally
+                </p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#facilities">Facilities</a></li>
+                    <li><a href="#placements">Placements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Programs</h4>
+                <ul>
+                    <li><a href="#programs">AME B1.1 Mechanical</a></li>
+                    <li><a href="#programs">AME B2 Avionics</a></li>
+                    <li><a href="#programs">BBA Aviation</a></li>
+                    <li><a href="#programs">Dual Degree</a></li>
+                    <li><a href="#contact">Admissions 2026</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li>Yelahanka, Bengaluru</li>
+                    <li>Karnataka, India</li>
+                    <li><a href="tel:+918296360743">+91 82963 60743</a></li>
+                    <li><a href="tel:+917204987514">+91 99029 65705</a></li>
+                    <li><a href="mailto:info@vsmaerospace.in">info@vsmaerospace.in</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 VSM Aerospace College. All Rights Reserved. | DGCA Approved Since 1994 | 100% Placement Record</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/919902965705?text=Hi%2C%20I'm%20interested%20in%20VSM%20Aerospace%20programs.%20I%20would%20like%20to%20know%20more%20about%20admissions." 
+       target="_blank" 
+       class="whatsapp-float"
+       title="Chat with us on WhatsApp">
+        💬
+    </a>
+
+    <script>
+        // Image and Video Upload Handlers
+        
+        // About Image Upload
+        document.getElementById('aboutImageUpload').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    const img = document.createElement('img');
+                    img.src = event.target.result;
+                    img.style.width = '100%';
+                    img.style.height = '100%';
+                    img.style.objectFit = 'cover';
+                    const container = document.getElementById('aboutImage');
+                    container.innerHTML = '';
+                    container.appendChild(img);
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // Lab Photos Upload (6 labs)
+        for (let i = 1; i <= 6; i++) {
+            document.getElementById(`lab${i}Upload`).addEventListener('change', function(e) {
+                const file = e.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function(event) {
+                        const img = document.createElement('img');
+                        img.src = event.target.result;
+                        img.style.width = '100%';
+                        img.style.height = '100%';
+                        img.style.objectFit = 'cover';
+                        const container = document.getElementById(`lab${i}`);
+                        container.innerHTML = '';
+                        container.appendChild(img);
+                    };
+                    reader.readAsDataURL(file);
+                }
+            });
+        }
+
+        // Main Video Upload
+        document.getElementById('mainVideoUpload').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const video = document.createElement('video');
+                video.controls = true;
+                video.style.width = '100%';
+                video.style.height = '100%';
+                video.style.objectFit = 'cover';
+                video.src = URL.createObjectURL(file);
+                const container = document.getElementById('mainVideo');
+                container.innerHTML = '';
+                container.appendChild(video);
+            }
+        });
+
+        // Sidebar Videos Upload (3 videos)
+        for (let i = 1; i <= 3; i++) {
+            document.getElementById(`video${i}Upload`).addEventListener('change', function(e) {
+                const file = e.target.files[0];
+                if (file) {
+                    const video = document.createElement('video');
+                    video.controls = true;
+                    video.style.width = '100%';
+                    video.style.height = '100%';
+                    video.style.objectFit = 'cover';
+                    video.src = URL.createObjectURL(file);
+                    const container = document.getElementById(`video${i}`);
+                    container.innerHTML = '';
+                    container.appendChild(video);
+                }
+            });
+        }
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                phone: formData.get('phone'),
+                program: formData.get('program'),
+                message: formData.get('message')
+            };
+            
+            // Show success message
+            alert('Thank you for your interest in VSM Aerospace College! We have received your application and will contact you soon via phone or email.');
+            
+            // Optional: Send to WhatsApp
+            const whatsappMessage = `New Admission Inquiry:%0A%0AName: ${data.name}%0AEmail: ${data.email}%0APhone: ${data.phone}%0AProgram: ${data.program}%0AMessage: ${data.message || 'None'}`;
+            // Uncomment to auto-send to WhatsApp:
+            // window.open(`https://wa.me/918296360743?text=${whatsappMessage}`, '_blank');
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Counter animation for stats
+        const animateCounter = (element, target) => {
+            let current = 0;
+            const increment = target / 100;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = target + (target === 100 ? '%' : '+');
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current) + (target === 100 ? '%' : '+');
+                }
+            }, 20);
+        };
+
+        // Trigger counter animation on scroll
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counters = entry.target.querySelectorAll('.stat-number');
+                    counters.forEach(counter => {
+                        const text = counter.textContent;
+                        const num = parseInt(text);
+                        animateCounter(counter, num);
+                    });
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        });
+
+        const statsSection = document.querySelector('.stats-bar');
+        if (statsSection) {
+            statsObserver.observe(statsSection);
+        }
+    </script>
+    <script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const name = document.querySelector('input[name="name"]').value;
+    const email = document.querySelector('input[name="email"]').value;
+    const phone = document.querySelector('input[name="phone"]').value;
+    const program = document.querySelector('select[name="program"]').value;
+    const message = document.querySelector('textarea[name="message"]').value;
+
+    const whatsappMessage = `New Admission Inquiry:%0A%0A
+Name: ${name}%0A
+Email: ${email}%0A
+Phone: ${phone}%0A
+Program: ${program}%0A
+Message: ${message || 'None'}`;
+
+    window.open(`https://wa.me/919902965705?text=${whatsappMessage}`, '_blank');
+
+    alert("Application submitted successfully! We will contact you soon.");
+
+    this.reset();
+});
+</script>
+</body>
+</html>
